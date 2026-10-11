@@ -44,6 +44,8 @@ Here is how to run it:
 python3 -m venv venv && source venv/bin/activate
 pip install anthropic redis numpy pandas fastf1 pydantic
 
+cd f1_cre_chief
+
 export ANTHROPIC_API_KEY="..."          # Insert your Agent API Key
 
 redis-cli FLUSHDB
