@@ -1,0 +1,73 @@
+--- each PIT call: how far ahead of the next real stop? ---
+  #1 lap 12: PIT_SOON  next stop in 2 laps -> in time
+  #1 lap 34: PIT_SOON  next stop in 2 laps -> in time
+  #2 lap 51: PIT_SOON  next stop in None laps -> no stop followed
+  #2 lap 54: PIT_SOON  next stop in None laps -> no stop followed
+  #4 lap 53: PIT_SOON  next stop in 1 laps -> in time
+  #10 lap 53: PIT_SOON  next stop in None laps -> no stop followed
+  #10 lap 56: PIT_SOON  next stop in None laps -> no stop followed
+  #11 lap 31: PIT_SOON  next stop in 3 laps -> in time
+  #18 lap 13: PIT_SOON  next stop in 2 laps -> in time
+  #23 lap 56: PIT_SOON  next stop in None laps -> no stop followed
+  #24 lap 47: PIT_SOON  next stop in 7 laps -> early by 7 laps
+  #24 lap 50: PIT_SOON  next stop in 4 laps -> in time
+  #27 lap 53: PIT_SOON  next stop in None laps -> no stop followed
+  #27 lap 56: PIT_SOON  next stop in None laps -> no stop followed
+  #55 lap 12: PIT_SOON  next stop in 1 laps -> in time
+  #77 lap 57: PIT_SOON  next stop in None laps -> no stop followed
+  7/16 PIT calls were followed by a stop within 4 laps
+
+--- each real stop: did we call it? ---
+  #1 stop at lap 14: CALLED at lap 12
+  #1 stop at lap 36: CALLED at lap 34
+  #2 stop at lap 12: analysed, but the agents said {'MONITOR'}
+  #2 stop at lap 30: no alert fired (the preprocessor was silent)
+  #2 stop at lap 40: no alert fired (the preprocessor was silent)
+  #4 stop at lap 10: alert fired but skipped by the cooldown
+  #4 stop at lap 17: no alert fired (the preprocessor was silent)
+  #4 stop at lap 27: no alert fired (the preprocessor was silent)
+  #4 stop at lap 37: analysed, but the agents said {'NO_ACTION'}
+  #4 stop at lap 47: analysed, but the agents said {'NO_ACTION'}
+  #4 stop at lap 54: CALLED at lap 53
+  #10 stop at lap 9: analysed, but the agents said {'NO_ACTION'}
+  #10 stop at lap 25: analysed, but the agents said {'NO_ACTION'}
+  #10 stop at lap 40: analysed, but the agents said {'NO_ACTION'}
+  #11 stop at lap 17: no alert fired (the preprocessor was silent)
+  #11 stop at lap 34: CALLED at lap 31
+  #14 stop at lap 14: analysed, but the agents said {'MONITOR'}
+  #14 stop at lap 34: no alert fired (the preprocessor was silent)
+  #16 stop at lap 13: analysed, but the agents said {'MONITOR'}
+  #16 stop at lap 33: analysed, but the agents said {'MONITOR'}
+  #18 stop at lap 15: CALLED at lap 13
+  #18 stop at lap 30: analysed, but the agents said {'NO_ACTION'}
+  #20 stop at lap 15: analysed, but the agents said {'NO_ACTION'}
+  #20 stop at lap 29: analysed, but the agents said {'NO_ACTION'}
+  #20 stop at lap 40: analysed, but the agents said {'NO_ACTION', 'MONITOR'}
+  #21 stop at lap 11: analysed, but the agents said {'NO_ACTION', 'MONITOR'}
+  #21 stop at lap 27: analysed, but the agents said {'NO_ACTION'}
+  #22 stop at lap 10: alert fired but skipped by the cooldown
+  #22 stop at lap 26: analysed, but the agents said {'NO_ACTION'}
+  #22 stop at lap 40: analysed, but the agents said {'NO_ACTION'}
+  #23 stop at lap 11: analysed, but the agents said {'MONITOR'}
+  #23 stop at lap 26: analysed, but the agents said {'MONITOR'}
+  #23 stop at lap 40: no alert fired (the preprocessor was silent)
+  #24 stop at lap 12: analysed, but the agents said {'NO_ACTION', 'MONITOR'}
+  #24 stop at lap 32: no alert fired (the preprocessor was silent)
+  #24 stop at lap 54: CALLED at lap 50
+  #27 stop at lap 11: analysed, but the agents said {'MONITOR'}
+  #27 stop at lap 26: analysed, but the agents said {'NO_ACTION', 'MONITOR'}
+  #27 stop at lap 40: alert fired but skipped by the cooldown
+  #31 stop at lap 12: analysed, but the agents said {'MONITOR'}
+  #31 stop at lap 15: analysed, but the agents said {'MONITOR'}
+  #31 stop at lap 32: analysed, but the agents said {'MONITOR'}
+  #31 stop at lap 41: alert fired but skipped by the cooldown
+  #44 stop at lap 12: analysed, but the agents said {'MONITOR'}
+  #44 stop at lap 30: no alert fired (the preprocessor was silent)
+  #55 stop at lap 13: CALLED at lap 12
+  #55 stop at lap 31: no alert fired (the preprocessor was silent)
+  #63 stop at lap 13: analysed, but the agents said {'MONITOR'}
+  #63 stop at lap 31: no alert fired (the preprocessor was silent)
+  #77 stop at lap 11: alert fired but skipped by the cooldown
+  #77 stop at lap 29: no alert fired (the preprocessor was silent)
+  #81 stop at lap 13: analysed, but the agents said {'NO_ACTION'}
+  7/52 real stops were called in time
